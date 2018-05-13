@@ -10,11 +10,13 @@ class List extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+
     handleChange(event) {
       this.setState({value: event.target.value});
-console.log(event.target.value);
+    console.log(event.target.value);
 
     }
+
     handleSubmit(event) {
       //this.state.value
       let value=this.state.value
@@ -32,7 +34,7 @@ console.log(event.target.value);
           </label>
           <input type="submit" value="Submit" />
 
-  </form>
+    </form>
 
 
       </div>

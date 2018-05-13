@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import First from './comp/First';
-import List from './comp/List';
+import ShowPopulation from './comp/ShowPopulation';
+import InputForm from './comp/InputForm';
 import Chart from './comp/Chart';
 import { connect } from "react-redux";
 
 import './App.css';
 
 class App extends Component {
-  //{this.props.user.showlist ? <Register/> : null} {this.props.user.showlist ? <List/> : null}
+
   render() {
-console.log(this.props.user.showlist );
+    console.log(this.props.user.showlist );
     return (
       <div className="App">
 
@@ -21,12 +21,12 @@ console.log(this.props.user.showlist );
           <h1 className="App-title">Welcome to React</h1>
           </header>
           <div>
-                <First/>
+                <ShowPopulation/>
 
                  {this.props.user.showlist ? <Chart/> : null}
 
 
-                 {this.props.user.showlist ? <List/> : null}
+                 {this.props.user.showlist ? <InputForm/> : null}
             </div>
 
 
