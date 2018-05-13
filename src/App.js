@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import ShowPopulation from './comp/ShowPopulation';
-import InputForm from './comp/InputForm';
+// import InputForm from './comp/InputForm';
 import Chart from './comp/Chart';
 import { connect } from "react-redux";
 
@@ -26,7 +26,7 @@ class App extends Component {
                  {this.props.user.showlist ? <Chart/> : null}
 
 
-                 {this.props.user.showlist ? <InputForm/> : null}
+                 {/*{this.props.user.showlist ? <InputForm/> : null}*/}
             </div>
 
 
