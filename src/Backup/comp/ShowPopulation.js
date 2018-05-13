@@ -28,4 +28,4 @@ this.props.showlist();
   }
 }
 
-export default connect(null, {showlist})(ShowPopulation);
+export default connect(mapStateToProps, {showlist})(ShowPopulation);
